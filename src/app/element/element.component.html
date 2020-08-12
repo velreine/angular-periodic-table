@@ -1,12 +1,12 @@
 <p>element works!</p>
 
-<div class="element bg-danger">
+<div class="element" [ngStyle]="{ 'background-color': element.backgroundColor}">
     <div class="d-block">
         <span class="atomicNumber">{{ element.atomicNumber }}</span>
         <span class="electronsPerShell">{{ element.electronsPerShell }}</span>
     </div>
     <div class="d-block">
-        <span class="atomicSymbol">{{ element.symbol }}</span>
+        <span class="atomicSymbol" [ngStyle]="{ 'color': element.symbolColor }" >{{ element.symbol }}</span>
     </div>
     <div class="d-block">
         <span class="atomicName">{{ element.name }}</span>
