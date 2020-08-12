@@ -14,7 +14,7 @@ export class ElementComponent implements OnInit {
 
 
   constructor() { 
-
+      this.element = new Element(1, 1.0079, 'H', 'Hydrogen', 0);
   }
 
   ngOnInit(): void {
