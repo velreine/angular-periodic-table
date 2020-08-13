@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Element } from '../element';
 import { ElementPhase } from '../element-phase.enum';
@@ -11,11 +11,15 @@ import { ElementType } from '../element-type.enum';
 })
 export class ElementComponent implements OnInit {
 
-  public element: Element = null;
+  @Input() public element: Element = null;
   
 
 
   constructor() { 
+
+    console.log(this.element);
+
+    if (this.element === null)
       this.element = new Element(1, 1.0079, 'H', 'Hydrogen', 0, 1, 1,ElementPhase.Gas, ElementType.OtherNonMetallic);
   }
 

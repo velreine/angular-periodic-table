@@ -1,13 +1,35 @@
-<p>periodic-table works!</p>
+
 
 <div class="container">
     <div class="row">
         <div class="col">
-            <ul>
-                <div *ngFor="let element of elements">
-                    <li>{{ element.name }} , {{ element.symbol }}</li>
+                <div class="d-block mb-5">
+                    <span class="g1 g ml25">{{ '1' | romanNumber }}</span>
+                <span class="g2 g ml25">{{ '2' | romanNumber }}</span>
+                <span class="g3 g ml25">{{ '3' | romanNumber }}</span>
+                <span class="g4 g ml25">{{ '4' | romanNumber }}</span>
+                <span class="g5 g ml25">{{ '5' | romanNumber }}</span>
+                <span class="g6 g ml25">{{ '6' | romanNumber }}</span>
+                <span class="g7 g ml25">{{ '7' | romanNumber }}</span>
+                <span class="g8 g ml25">{{ '8' | romanNumber }}</span>
+                <span class="g9 g ml25">{{ '9' | romanNumber }}</span>
+                <span class="g10 g ml25">{{ '10' | romanNumber }}</span>
+                <span class="g11 g ml25">{{ '11' | romanNumber }}</span>
+                <span class="g12 g ml25">{{ '12' | romanNumber }}</span>
+                <span class="g13 g ml25">{{ '13' | romanNumber }}</span>
+                <span class="g14 g ml25">{{ '14' | romanNumber }}</span>
+                <span class="g15 g ml25">{{ '15' | romanNumber }}</span>
+                <span class="g16 g ml25">{{ '16' | romanNumber }}</span>
+                <span class="g17 g ml25">{{ '17' | romanNumber }}</span>
+                <span class="g18 g ml25">{{ '18' | romanNumber }}</span>
                 </div>
-            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div *ngFor="let element of elements">
+                <app-element [element]="element"></app-element>
+            </div>
         </div>
     </div>
 </div>
