@@ -2,6 +2,11 @@
     position: absolute;
 }
 
+.noStyleLink {
+    color: inherit;
+    text-decoration: none;
+}
+
 .ml25 {
     margin-left: 25px;
 }

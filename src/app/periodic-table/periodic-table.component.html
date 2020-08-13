@@ -28,7 +28,10 @@
     <div class="row">
         <div class="col">
             <div *ngFor="let element of elements">
-                <app-element [element]="element"></app-element>
+                <a class="noStyleLink" [routerLink]="'element/' + element.atomicNumber">
+                    <!-- <app-element [ngClass]="'g'+element.group + ' ' + 'p'+element.period" [element]="element"></app-element> -->
+                    <app-element [element]="element"></app-element>
+                </a>
             </div>
         </div>
     </div>

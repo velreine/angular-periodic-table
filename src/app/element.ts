@@ -86,7 +86,5 @@ export class Element {
                 this.backgroundColor = '#e1916e'; // Brown/Orangeish
                 break;
         }
-
-        console.table(this);
     }
 }

@@ -1,0 +1,7 @@
+
+<div *ngIf="element === null; else elementFound">
+    <p>Element is null.</p>
+</div>
+<ng-template #elementFound>
+    <app-element [element]=element></app-element>
+</ng-template>

@@ -4,6 +4,10 @@
     height: 60px;
 }
 
+.element:hover {
+    cursor: pointer;
+}
+
 .atomicNumber {
     font-size: 12px;
     position: absolute;

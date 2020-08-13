@@ -118,7 +118,7 @@ export class ElementsService {
 
 
       // Radioactive row 1
-      new Element(57,138.9055,'La','Lanthanum',0, 6, 3, ElementPhase.Solid, ElementType.Lanthanide),
+      new Element(57,138.9055,'La','Lanthanum',0, 8, 3, ElementPhase.Solid, ElementType.Lanthanide),
       new Element(58,140.116,'Ce','Cerium',0, 8, 4, ElementPhase.Solid, ElementType.Lanthanide),
       new Element(59,140.9077,'Pr','Praseodymium',0, 8, 5, ElementPhase.Solid, ElementType.Lanthanide),
       new Element(60,144.24,'Nd','Neodymium',0, 8, 6, ElementPhase.Solid, ElementType.Lanthanide),
@@ -135,7 +135,7 @@ export class ElementsService {
       new Element(71,174.967,'Lu','Lutetium',0, 8, 17, ElementPhase.Solid, ElementType.Lanthanide),
       
       // Radioactive row 2
-      new Element(89,227.0,'Ac','Actinium',0, 7, 3, ElementPhase.Solid, ElementType.Actinide),
+      new Element(89,227.0,'Ac','Actinium',0, 9, 3, ElementPhase.Solid, ElementType.Actinide),
       new Element(90,232.0381,'Th','Thorium',0, 9, 4, ElementPhase.Solid, ElementType.Actinide),
       new Element(91,231.0359,'Pa','Protactinium',0, 9, 5, ElementPhase.Solid, ElementType.Actinide),
       new Element(92,238.0289,'U','Uranium',0, 9, 6, ElementPhase.Solid, ElementType.Actinide),
