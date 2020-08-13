@@ -12,7 +12,7 @@ import { ElementType } from '../element-type.enum';
 export class ElementComponent implements OnInit {
 
   @Input() public element: Element = null;
-  
+  @Input() public cssClasses: string = 'element';
 
 
   constructor() { 
