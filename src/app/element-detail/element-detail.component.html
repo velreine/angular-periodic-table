@@ -3,5 +3,16 @@
     <p>Element is null.</p>
 </div>
 <ng-template #elementFound>
-    <app-element [element]=element></app-element>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <h1>{{ element.name }}</h1>
+                <app-element [element]=element></app-element>
+            </div>
+            <div class="col-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut dolores vero in blanditiis architecto est soluta vitae saepe eligendi consequatur aliquid nemo, sunt cupiditate aperiam. Adipisci modi sunt nobis sint sequi eveniet nisi iste assumenda deserunt repellat necessitatibus quo optio cumque, velit consequuntur quisquam iure sed repudiandae qui. Libero.
+            </div>
+        </div>
+    </div>
 </ng-template>
