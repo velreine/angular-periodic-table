@@ -1,3 +1,74 @@
+.legend-unknown {
+    /* background-color: #87ac46; */
+    background-color: #000000;
+    color: #87ac45;
+}
+
+.legend-gas {
+    /* background-color: #FF0000; */
+    background-color: #000000;
+    color: #ff0000;
+}
+
+.legend-solid {
+    /* background-color: #000000; */
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.legend-liquid {
+    /* background-color: #d68a3d; */
+    background-color: #000000;
+    color: #d68a3d;
+}
+
+
+
+
+
+
+
+
+.legend-other-non-metallic {
+    background-color: #c8a2cb;
+}
+
+.legend-half-metal {
+    background-color: #9db2a5;
+}
+
+.legend-halogen {
+    background-color: #7fa346;
+}
+
+.legend-noblegas {
+    background-color: #7ca9d9;
+}
+
+.legend-alkali-metal {
+    background-color: #d2e28b;
+}
+
+.legend-earth-alkali-metal {
+    background-color: #ffb92d;
+}
+
+.legend-actinide {
+    background-color: #d7d7d7;
+}
+
+.legend-lanthanide {
+    background-color: #37b969;
+}
+
+.legend-transition-metal {
+    background-color: #f0f019;
+}
+
+.legend-post-transition-metal {
+    background-color: #e1916e;
+}
+
 .g {
     position: absolute;
 }

@@ -38,6 +38,9 @@ export class Element {
             case null:
                 this.symbolColor = '#000000'; // Black
                 break;
+            case ElementPhase.Solid:
+                this.symbolColor = '#00000';
+                break;
             case ElementPhase.Gas:
                 this.symbolColor = '#FF0000'; // Red
                 break;
