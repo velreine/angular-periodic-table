@@ -16,12 +16,16 @@ export class WikipediaService {
   constructor(private _http: HttpClient) { }
   //https://en.wikipedia.org/w/api.php
   //?action=query&prop=extracts&format=json&exintro=&titles=Lithium
-  public searchForElement(element: Element): Observable<object> {
+  public searchForElement(element: Element): Observable<any> {
 
     return this._http.get(this._baseUrl, {
       headers: null,
       observe: null,
-      params: { 'action': 'query', 'prop': 'extracts', 'format': 'json', 'exintro': 'true', 'titles': element.name},
+      params: { 
+        'action': 'query',
+        'prop': 'extracts', 'format': 'json', 'exintro': 'true',
+        'titles': element.name
+      },
       reportProgress: false,
       responseType: 'json',
       withCredentials: false

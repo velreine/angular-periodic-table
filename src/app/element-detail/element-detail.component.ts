@@ -4,6 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 import { ElementsService } from '../elements.service';
 import { Element } from '../element';
 
+import { WikipediaService } from '../wikipedia.service';
+
 @Component({
   selector: 'app-element-detail',
   templateUrl: './element-detail.component.html',
@@ -13,7 +15,12 @@ export class ElementDetailComponent implements OnInit {
 
   public element: Element = null;
 
-  constructor(private _route: ActivatedRoute, private _elementsService: ElementsService) { }
+  public htmlFromWiki: string = null;
+
+  constructor(private _route: ActivatedRoute,
+    private _elementsService: ElementsService,
+    private _wikiService: WikipediaService
+    ) { }
 
   ngOnInit(): void {
 
@@ -29,6 +36,12 @@ export class ElementDetailComponent implements OnInit {
     });
 
     
+    this._wikiService.searchForElement(this.element).subscribe(data => {
+      this.htmlFromWiki = data.query.pages[0].extract;
+    });
+
+
+
   }
 
 }

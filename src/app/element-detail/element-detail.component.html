@@ -3,5 +3,14 @@
     <p>Element is null.</p>
 </div>
 <ng-template #elementFound>
-    <app-element [element]=element></app-element>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <app-element [element]=element></app-element>
+            </div>
+            <div class="col-6">
+                <div [innerHTML]="htmlFromWiki"></div>
+            </div>
+        </div>
+    </div>
 </ng-template>
