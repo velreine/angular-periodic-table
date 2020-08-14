@@ -4,7 +4,6 @@ import { ActivatedRoute } from '@angular/router';
 import { ElementsService } from '../elements.service';
 import { Element } from '../element';
 
-import { WikipediaService } from '../wikipedia.service';
 
 @Component({
   selector: 'app-element-detail',
@@ -19,7 +18,6 @@ export class ElementDetailComponent implements OnInit {
 
   constructor(private _route: ActivatedRoute,
     private _elementsService: ElementsService,
-    private _wikiService: WikipediaService
     ) { }
 
   ngOnInit(): void {
@@ -34,13 +32,6 @@ export class ElementDetailComponent implements OnInit {
 
       this.element = foundElement;
     });
-
-    
-    this._wikiService.searchForElement(this.element).subscribe(data => {
-      this.htmlFromWiki = data.query.pages[0].extract;
-    });
-
-
 
   }
 
