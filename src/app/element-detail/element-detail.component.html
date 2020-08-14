@@ -1,16 +1,30 @@
 
-<div *ngIf="element === null; else elementFound">
-    <p>Element is null.</p>
-</div>
+<div class="container">
+        <div *ngIf="element === null; else elementFound">
+            <div class="row">
+                <div class="col">
+                    <p>Element is null.</p>
+                </div>
+            </div>
+        </div>
+
+
+
 <ng-template #elementFound>
-    <div class="container">
+
         <div class="row">
             <div class="col-6">
-                <app-element [element]=element></app-element>
+                <app-element [cssClasses]="'element position-relative'" [element]=element></app-element>
             </div>
             <div class="col-6">
                 <div [innerHTML]="htmlFromWiki"></div>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col">
+                <p>Go back to <a routerLink="">periodic-table</a></p>
+            </div>
+        </div>
 </ng-template>
+
+</div>

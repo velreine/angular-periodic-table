@@ -79,7 +79,7 @@
         <div class="col">
             <div *ngFor="let element of elements">
                 <a class="noStyleLink" [routerLink]="'element/' + element.atomicNumber">
-                    <app-element [cssClasses]="'element' + ' ' + 'g'+element.group + ' ' + 'p'+element.period" [element]="element"></app-element>
+                    <app-element [cssClasses]="'element' + ' ' + 'g'+element.group + ' ' + 'p'+element.period + ' ' + 'position-absolute'" [element]="element"></app-element>
                     <!-- <app-element [element]="element"></app-element> -->
                 </a>
             </div>
