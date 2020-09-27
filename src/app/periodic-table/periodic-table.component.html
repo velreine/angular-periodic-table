@@ -1,88 +1,86 @@
-
-
 <div class="container">
-    <div class="row">
-        <!-- <div class="col"> -->
-                <div class="legend-other-non-metallic m-1 p-1 d-inline">
-                    <span>Other Non-Metallic</span>
-                </div>
-
-                <div class="legend-half-metal m-1 p-1 d-inline">
-                    <span>Half-Metal</span>
-                </div>
-                <div class="legend-halogen m-1 p-1 d-inline">
-                    <span>Halogen</span>
-                </div>
-                <div class="legend-noblegas m-1 p-1 d-inline">
-                    <span>Noblegas</span>
-                </div>
-                <div class="legend-alkali-metal m-1 p-1 d-inline">
-                    <span>Alkali-metal</span>
-                </div>
-                <div class="legend-earth-alkali-metal m-1 p-1 d-inline">
-                    <span>Earth Alkali-metal</span>
-                </div>
-                <div class="legend-lanthanide m-1 p-1 d-inline">
-                    <span>Lanthanide</span>
-                </div>
-                <div class="legend-actinide m-1 p-1 d-inline">
-                    <span>Actinide</span>
-                </div>
-                <div class="legend-transition-metal m-1 p-1 d-inline">
-                    <span>Transition Metal</span>
-                </div>                                            
-                <div class="legend-post-transition-metal m-1 p-1 d-inline">
-                    <span>Post Transition Metal</span>
-                </div>   
-                     
-                
-                <div class="d-block border p-1 border-secondary">
-                    <br>
-                    <div class="legend-solid m-1 p-1 d-inline"><span>solid</span></div>
-                    <div class="legend-gas m-1 p-1 d-inline"><span>gas</span></div>
-                    <div class="legend-liquid m-1 p-1 d-inline"><span>liquid</span></div>
-                    <div class="legend-unknown m-1 p-1 d-inline"><span>unknown</span></div>
-                </div>
-
-
-
-        <!-- </div> -->
+  <div class="row">
+    <!-- <div class="col"> -->
+    <div class="legend-other-non-metallic m-1 p-1 d-inline">
+      <span>Other Non-Metallic</span>
     </div>
 
-           
+    <div class="legend-half-metal m-1 p-1 d-inline">
+      <span>Half-Metal</span>
+    </div>
+    <div class="legend-halogen m-1 p-1 d-inline">
+      <span>Halogen</span>
+    </div>
+    <div class="legend-noblegas m-1 p-1 d-inline">
+      <span>Noblegas</span>
+    </div>
+    <div class="legend-alkali-metal m-1 p-1 d-inline">
+      <span>Alkali-metal</span>
+    </div>
+    <div class="legend-earth-alkali-metal m-1 p-1 d-inline">
+      <span>Earth Alkali-metal</span>
+    </div>
+    <div class="legend-lanthanide m-1 p-1 d-inline">
+      <span>Lanthanide</span>
+    </div>
+    <div class="legend-actinide m-1 p-1 d-inline">
+      <span>Actinide</span>
+    </div>
+    <div class="legend-transition-metal m-1 p-1 d-inline">
+      <span>Transition Metal</span>
+    </div>
+    <div class="legend-post-transition-metal m-1 p-1 d-inline">
+      <span>Post Transition Metal</span>
+    </div>
 
-    <div class="row mt-5">
-        <div class="col">
-                <div class="d-block mb-5">
-                    <span class="g1 g ml25">{{ '1' | romanNumber }}</span>
-                <span class="g2 g ml25">{{ '2' | romanNumber }}</span>
-                <span class="g3 g ml25">{{ '3' | romanNumber }}</span>
-                <span class="g4 g ml25">{{ '4' | romanNumber }}</span>
-                <span class="g5 g ml25">{{ '5' | romanNumber }}</span>
-                <span class="g6 g ml25">{{ '6' | romanNumber }}</span>
-                <span class="g7 g ml25">{{ '7' | romanNumber }}</span>
-                <span class="g8 g ml25">{{ '8' | romanNumber }}</span>
-                <span class="g9 g ml25">{{ '9' | romanNumber }}</span>
-                <span class="g10 g ml25">{{ '10' | romanNumber }}</span>
-                <span class="g11 g ml25">{{ '11' | romanNumber }}</span>
-                <span class="g12 g ml25">{{ '12' | romanNumber }}</span>
-                <span class="g13 g ml25">{{ '13' | romanNumber }}</span>
-                <span class="g14 g ml25">{{ '14' | romanNumber }}</span>
-                <span class="g15 g ml25">{{ '15' | romanNumber }}</span>
-                <span class="g16 g ml25">{{ '16' | romanNumber }}</span>
-                <span class="g17 g ml25">{{ '17' | romanNumber }}</span>
-                <span class="g18 g ml25">{{ '18' | romanNumber }}</span>
-                </div>
-        </div>
+
+    <div class="d-block border p-1 border-secondary">
+      <br>
+      <div class="legend-solid m-1 p-1 d-inline"><span>solid</span></div>
+      <div class="legend-gas m-1 p-1 d-inline"><span>gas</span></div>
+      <div class="legend-liquid m-1 p-1 d-inline"><span>liquid</span></div>
+      <div class="legend-unknown m-1 p-1 d-inline"><span>unknown</span></div>
     </div>
-    <div class="row">
-        <div class="col">
-            <div *ngFor="let element of elements">
-                <a class="noStyleLink" [routerLink]="'element/' + element.atomicNumber">
-                    <app-element [cssClasses]="'element' + ' ' + 'g'+element.group + ' ' + 'p'+element.period + ' ' + 'position-absolute'" [element]="element"></app-element>
-                    <!-- <app-element [element]="element"></app-element> -->
-                </a>
-            </div>
-        </div>
+
+
+    <!-- </div> -->
+  </div>
+
+
+  <div class="row mt-5">
+    <div class="col">
+      <div class="d-block mb-5">
+        <span class="g1 g ml25">{{ 1 | romanNumber }}</span>
+        <span class="g2 g ml25">{{ 2 | romanNumber }}</span>
+        <span class="g3 g ml25">{{ 3 | romanNumber }}</span>
+        <span class="g4 g ml25">{{ 4 | romanNumber }}</span>
+        <span class="g5 g ml25">{{ 5 | romanNumber }}</span>
+        <span class="g6 g ml25">{{ 6 | romanNumber }}</span>
+        <span class="g7 g ml25">{{ 7 | romanNumber }}</span>
+        <span class="g8 g ml25">{{ 8 | romanNumber }}</span>
+        <span class="g9 g ml25">{{ 9 | romanNumber }}</span>
+        <span class="g10 g ml25">{{ 10 | romanNumber }}</span>
+        <span class="g11 g ml25">{{ 11 | romanNumber }}</span>
+        <span class="g12 g ml25">{{ 12 | romanNumber }}</span>
+        <span class="g13 g ml25">{{ 13 | romanNumber }}</span>
+        <span class="g14 g ml25">{{ 14 | romanNumber }}</span>
+        <span class="g15 g ml25">{{ 15 | romanNumber }}</span>
+        <span class="g16 g ml25">{{ 16 | romanNumber }}</span>
+        <span class="g17 g ml25">{{ 17 | romanNumber }}</span>
+        <span class="g18 g ml25">{{ 18 | romanNumber }}</span>
+      </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div *ngFor="let element of elements">
+        <a class="noStyleLink" [routerLink]="'element/' + element.atomicNumber">
+          <app-element
+            [cssClasses]="'element' + ' ' + 'g'+element.group + ' ' + 'p'+element.period + ' ' + 'position-absolute'"
+            [element]="element"></app-element>
+          <!-- <app-element [element]="element"></app-element> -->
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
